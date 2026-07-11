@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pankaj Daga — Software Engineer</title>
+<meta name="description" content="Pankaj Daga — software engineer building trading tools, data pipelines, and AI applications. Available for freelance work.">
+<link rel="preconnect" href="https://github.com">
+<link rel="stylesheet" href="./style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📈</text></svg>">
+</head>
+<body>
+<a class="skip" href="#projects">Skip to projects</a>
+
+<header class="topbar">
+  <a class="brand" href="#top">pankaj<span class="accent">.daga</span></a>
+  <nav class="nav">
+    <a href="#projects">Projects</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle colour theme" title="Toggle theme">
+      <span class="theme-icon">◑</span>
+    </button>
+  </nav>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <p class="eyebrow">Software Engineer · Trading tools · Data &amp; AI</p>
+    <h1>Pankaj&nbsp;Daga</h1>
+    <p class="lede">
+      I build focused, dependency-light tools that turn messy data into
+      something you can actually make decisions with — trading journals,
+      data pipelines, and local-first AI applications.
+    </p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="#projects">See my work</a>
+      <a class="btn" href="https://github.com/dagap" target="_blank" rel="noopener">GitHub&nbsp;↗</a>
+    </div>
+    <p class="availability">
+      <span class="dot"></span> Available for freelance &amp; contract work
+    </p>
+  </section>
+
+  <section id="projects" class="section">
+    <h2 class="section-title"><span class="hash">#</span> Projects</h2>
+
+    <div class="cards">
+
+      <!-- ─────────── Project card: copy this block to add a new project ─────────── -->
+      <article class="card">
+        <div class="card-head">
+          <h3>Trade Republic P&amp;L Ledger</h3>
+          <span class="tag tag-live">Live demo</span>
+        </div>
+        <p class="card-desc">
+          A personal trading journal that turns broker CSV exports into an
+          interactive dashboard — daily P&amp;L calendar, equity curve,
+          win/loss analysis, and rolling performance metrics. Zero external
+          dependencies: pure Python builds a single self-contained HTML file.
+        </p>
+        <ul class="stack">
+          <li>Python (stdlib only)</li>
+          <li>Vanilla JS</li>
+          <li>Hand-rolled SVG charts</li>
+        </ul>
+        <div class="card-links">
+          <a class="btn btn-sm btn-primary" href="https://dagap.github.io/trade-republic-pnl-ledger/" target="_blank" rel="noopener">Live demo ↗</a>
+          <a class="btn btn-sm" href="https://github.com/dagap/trade-republic-pnl-ledger" target="_blank" rel="noopener">Source ↗</a>
+        </div>
+      </article>
+      <!-- ─────────────────────────── end project card ──────────────────────────── -->
+
+      <article class="card">
+        <div class="card-head">
+          <h3>NASDAQ Trading Assistant</h3>
+          <span class="tag">Research</span>
+        </div>
+        <p class="card-desc">
+          A local-first trading research assistant that combines market data
+          with a locally-run LLM (Ollama) to generate deliberate, explainable
+          signals — currently in live forward-testing. Cost-conscious by
+          design: everything runs on-device.
+        </p>
+        <ul class="stack">
+          <li>Python</li>
+          <li>Ollama / local LLM</li>
+          <li>Market data APIs</li>
+        </ul>
+        <div class="card-links">
+          <!-- TODO: make repo public or remove this link if it stays private -->
+          <a class="btn btn-sm" href="https://github.com/dagap/nasdaq-trading-assistant" target="_blank" rel="noopener">Source ↗</a>
+        </div>
+      </article>
+
+      <!-- Placeholder for your next project. Duplicate a card above. -->
+      <article class="card card-ghost">
+        <div class="card-head">
+          <h3>More coming soon</h3>
+        </div>
+        <p class="card-desc">
+          New portfolio projects will land here. Duplicate a card block in
+          <code>index.html</code> to add one.
+        </p>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <h2 class="section-title"><span class="hash">#</span> About</h2>
+    <div class="about">
+      <p>
+        <!-- TODO: personalise this. Keep it honest and specific. -->
+        I'm a software engineer with a focus on turning real-world data into
+        practical, reliable tools. I like small, well-tested systems with few
+        moving parts — code that's easy to reason about and cheap to run.
+      </p>
+      <p>
+        Lately I've been building in the trading and AI space: journaling and
+        analytics tools, data pipelines, and local-first LLM applications that
+        keep costs down and data on-device. I'm based in Europe (CET) and
+        available for freelance and contract engagements.
+      </p>
+      <div class="skills">
+        <span>Python</span>
+        <span>Data pipelines</span>
+        <span>LLMs / Ollama</span>
+        <span>Financial data</span>
+        <span>Web dashboards</span>
+        <span>CI / GitHub Actions</span>
+        <span>Testing</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2 class="section-title"><span class="hash">#</span> Contact</h2>
+    <p class="contact-lede">
+      Have a project in mind, or want to talk about contract work?
+      The fastest way to reach me:
+    </p>
+    <div class="contact-links">
+      <!-- TODO: swap in the email you want clients to use (not your employer address). -->
+      <a class="btn btn-primary" href="mailto:your-email@example.com">Email me</a>
+      <a class="btn" href="https://github.com/dagap" target="_blank" rel="noopener">GitHub ↗</a>
+      <!-- TODO: add your LinkedIn URL, or delete this link. -->
+      <a class="btn" href="#" data-todo="linkedin">LinkedIn ↗</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>© <span id="year">2026</span> Pankaj Daga · Built with plain HTML/CSS, hosted on GitHub Pages</p>
+</footer>
+
+<script src="./main.js"></script>
+</body>
+</html>
