@@ -3,170 +3,380 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Dr. Pankaj Daga — Machine Learning and Medical Image Analysis</title>
-<meta name="description" content="Dr. Pankaj Daga — expert in Machine Learning and Medical Image Analysis.">
+<title>Dr. Pankaj Daga — Freelance ML Engineer | LLM Systems, Medical Imaging, Scientific ML</title>
+<meta name="description" content="Freelance ML engineer (PhD, UCL) building production AI: LLM agents and document analysis, medical imaging, and scientific ML. Heidelberg / remote.">
+<meta name="author" content="Dr. Pankaj Daga">
+<meta name="theme-color" content="#0d1117" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
 <link rel="canonical" href="https://dagap.github.io/">
 
-<!-- Open Graph (Facebook, LinkedIn, Slack, etc.) -->
+<!-- Open Graph (LinkedIn, Slack, etc.) -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://dagap.github.io/">
-<meta property="og:title" content="Dr. Pankaj Daga — Machine Learning and Medical Image Analysis">
-<meta property="og:description" content="Expert in Machine Learning and Medical Image Analysis.">
+<meta property="og:title" content="Dr. Pankaj Daga — Freelance ML Engineer | LLM Systems, Medical Imaging, Scientific ML">
+<meta property="og:description" content="Freelance ML engineer (PhD, UCL) building production AI: LLM agents and document analysis, medical imaging, and scientific ML. Heidelberg / remote.">
 <meta property="og:image" content="https://dagap.github.io/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Dr. Pankaj Daga — I build AI systems that make it to production.">
+<meta property="og:locale" content="en_GB">
 
 <!-- Twitter / X -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Dr. Pankaj Daga — Machine Learning and Medical Image Analysis">
-<meta name="twitter:description" content="Expert in Machine Learning and Medical Image Analysis.">
+<meta name="twitter:title" content="Dr. Pankaj Daga — Freelance ML Engineer | LLM Systems, Medical Imaging, Scientific ML">
+<meta name="twitter:description" content="Freelance ML engineer (PhD, UCL) building production AI: LLM agents and document analysis, medical imaging, and scientific ML. Heidelberg / remote.">
 <meta name="twitter:image" content="https://dagap.github.io/og-image.png">
 
-<link rel="preconnect" href="https://github.com">
-<link rel="stylesheet" href="./style.css">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📈</text></svg>">
-</head>
-<body>
-<a class="skip" href="#projects">Skip to projects</a>
+<link rel="icon" href="./favicon.svg" type="image/svg+xml">
 
-<header class="topbar">
+<!-- Structured data. Add the LinkedIn URL to sameAs once known. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Dr. Pankaj Daga",
+  "honorificPrefix": "Dr.",
+  "jobTitle": "Freelance Machine Learning Engineer",
+  "url": "https://dagap.github.io/",
+  "image": "https://dagap.github.io/og-image.png",
+  "address": { "@type": "PostalAddress", "addressLocality": "Heidelberg", "addressCountry": "DE" },
+  "alumniOf": { "@type": "CollegeOrUniversity", "name": "University College London" },
+  "knowsAbout": ["LLM and agent systems", "Medical imaging AI", "Scientific machine learning and simulation"],
+  "sameAs": [
+    "https://github.com/dagap",
+    "https://scholar.google.com/citations?user=8tolb2sAAAAJ",
+    "https://www.malt.com/profile/pankajdaga1"
+  ]
+}
+</script>
+
+<script>
+  /* Set theme before first paint to avoid a dark→light flash. */
+  (function(){try{var t=localStorage.getItem("theme");if(!t&&matchMedia("(prefers-color-scheme: light)").matches)t="light";if(t)document.documentElement.setAttribute("data-theme",t);}catch(e){}document.documentElement.classList.add("js");})();
+</script>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body id="top">
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="topbar" id="topbar">
   <a class="brand" href="#top">pankaj<span class="accent">.daga</span></a>
-  <nav class="nav">
-    <a href="#projects">Projects</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-    <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle colour theme" title="Toggle theme">
-      <span class="theme-icon">◑</span>
+  <div class="topbar-right">
+    <nav class="nav" id="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li class="nav-cta-item"><a class="btn btn-primary" href="#contact">Work with me</a></li>
+      </ul>
+    </nav>
+    <button id="theme-toggle" class="icon-btn theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">
+      <svg class="icon-sun" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <svg class="icon-moon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
     </button>
-  </nav>
+    <a class="btn btn-primary btn-sm header-cta" href="#contact">Work with me</a>
+    <button id="menu-toggle" class="icon-btn menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><path class="bar bar1" d="M4 7h16"/><path class="bar bar2" d="M4 12h16"/><path class="bar bar3" d="M4 17h16"/></svg>
+    </button>
+  </div>
 </header>
 
-<main id="top">
+<main id="main">
 
-  <section class="hero">
-    <p class="eyebrow">Machine Learning · Medical Image Analysis</p>
-    <h1>Dr.&nbsp;Pankaj&nbsp;Daga</h1>
-    <p class="lede">
-      Expert in Machine Learning and Medical Image Analysis.
-    </p>
-    <div class="cta-row">
-      <a class="btn btn-primary" href="#projects">Projects</a>
-      <a class="btn" href="https://scholar.google.com/citations?user=8tolb2sAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google&nbsp;Scholar&nbsp;↗</a>
-      <a class="btn" href="https://github.com/dagap" target="_blank" rel="noopener">GitHub&nbsp;↗</a>
-    </div>
-  </section>
-
-  <section id="projects" class="section">
-    <h2 class="section-title"><span class="hash">#</span> Projects</h2>
-
-    <div class="cards">
-
-      <!-- ─────────── Project card: copy this block to add a new project ─────────── -->
-      <article class="card">
-        <div class="card-head">
-          <h3>recalibench</h3>
-          <span class="tag">AI / ML</span>
-        </div>
-        <p class="card-desc">
-          Is your AI's confidence honest? A calibration benchmark and toolkit,
-          tested live on TypeSafe's Jev LLM API: it measures how far a model's
-          stated confidence is from reality on a given task, then fixes it with
-          post-hoc calibration on a small labelled sample, with no retraining.
-          Calibration error fell 3–20× on every task, and cases auto-handled at
-          99% accuracy rose from 81% to 94%. Bootstrap confidence intervals,
-          an HTML report and a Streamlit decision-policy app.
-        </p>
-        <ul class="stack">
-          <li>Python</li>
-          <li>scikit-learn</li>
-          <li>LLM APIs (Jev)</li>
-          <li>asyncio / httpx</li>
-          <li>Streamlit</li>
-        </ul>
-        <div class="card-links">
-          <a class="btn btn-sm btn-primary" href="https://github.com/dagap/recalibench" target="_blank" rel="noopener">Source ↗</a>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="card-head">
-          <h3>Trade Republic P&amp;L Ledger</h3>
-          <span class="tag tag-live">Live demo</span>
-        </div>
-        <p class="card-desc">
-          A personal trading journal that turns broker CSV exports into an
-          interactive dashboard — daily P&amp;L calendar, equity curve,
-          win/loss analysis, and rolling performance metrics. Zero external
-          dependencies: pure Python builds a single self-contained HTML file.
-        </p>
-        <ul class="stack">
-          <li>Python (stdlib only)</li>
-          <li>Vanilla JS</li>
-          <li>Hand-rolled SVG charts</li>
-        </ul>
-        <div class="card-links">
-          <a class="btn btn-sm btn-primary" href="https://dagap.github.io/trade-republic-pnl-ledger/" target="_blank" rel="noopener">Live demo ↗</a>
-          <a class="btn btn-sm" href="https://github.com/dagap/trade-republic-pnl-ledger" target="_blank" rel="noopener">Source ↗</a>
-        </div>
-      </article>
-      <!-- ─────────────────────────── end project card ──────────────────────────── -->
-
-    </div>
-  </section>
-
-  <section id="about" class="section">
-    <h2 class="section-title"><span class="hash">#</span> About</h2>
-    <div class="about">
-      <p>
-        <!-- TODO: personalise this. Keep it honest and specific. -->
-        I work in machine learning and medical image analysis, building models
-        and systems that turn complex imaging and data into reliable,
-        interpretable results.
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero-text">
+      <p class="availability"><span class="dot" aria-hidden="true"></span>Available for new projects</p>
+      <p class="hero-name">Dr.&nbsp;Pankaj&nbsp;Daga</p>
+      <p class="eyebrow">Freelance ML Engineer · PhD (UCL) · Heidelberg / Remote</p>
+      <h1 id="hero-title">I build AI systems that make it to production.</h1>
+      <p class="lede">
+        From LLM agents for insurers to medical imaging pipelines and scientific
+        simulation — 15+ years turning complex data into reliable, interpretable results.
       </p>
-      <div class="skills">
-        <span>Machine learning</span>
-        <span>Medical image analysis</span>
-        <span>Deep learning</span>
-        <span>Python</span>
-        <span>Model training &amp; eval</span>
-        <span>Data pipelines</span>
+      <p class="proof">
+        <span>LLM document analysis in production across 20+ countries</span>
+        <span>Brain MRI volumetry &amp; lesion segmentation</span>
+        <span>Ultrasound simulation for medtech</span>
+      </p>
+      <div class="cta-row">
+        <a class="btn btn-primary btn-lg" href="#contact">Work with me</a>
+        <a class="btn btn-lg" href="#projects">See projects</a>
+      </div>
+      <p class="text-links">
+        <a href="https://scholar.google.com/citations?user=8tolb2sAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar ↗</a>
+        <a href="https://github.com/dagap" target="_blank" rel="noopener">GitHub ↗</a>
+      </p>
+    </div>
+    <div class="hero-photo">
+      <div class="avatar" data-initials="PD">
+        <img src="./assets/headshot.webp" alt="Portrait of Dr. Pankaj Daga" width="280" height="280" fetchpriority="high" decoding="async">
       </div>
     </div>
   </section>
 
-  <section id="contact" class="section">
-    <h2 class="section-title"><span class="hash">#</span> Contact</h2>
-    <p class="contact-lede">
-      The best ways to reach me:
-    </p>
-    <div class="contact-links">
-      <a class="btn btn-primary" href="https://github.com/dagap" target="_blank" rel="noopener">GitHub ↗</a>
-      <!-- Email button re-enabled once Pankaj provides an address. No LinkedIn (intentional). -->
-      <!-- <a class="btn" href="mailto:REPLACE_WITH_EMAIL">Email</a> -->
+  <section id="services" class="section" aria-labelledby="services-title">
+    <h2 class="section-title" id="services-title">What I do</h2>
+    <div class="services">
+
+      <article class="service">
+        <svg class="service-icon" viewBox="0 0 24 24" width="28" height="28" aria-hidden="true" focusable="false"><path d="M4 5h16v10H9l-5 4z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8 9h8M8 12h5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        <h3>LLM &amp; agent systems</h3>
+        <p>Document analysis, RAG and agentic workflows that run reliably in production — with evaluation, calibration and audit trails built in.</p>
+        <ul class="stack"><li>RAG</li><li>Agents</li><li>LLM evaluation</li><li>Calibration</li></ul>
+      </article>
+
+      <article class="service">
+        <svg class="service-icon" viewBox="0 0 24 24" width="28" height="28" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="3" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 7v10M7 12h10" stroke="currentColor" stroke-width="1.2" stroke-dasharray="1.5 1.5"/></svg>
+        <h3>Medical imaging AI</h3>
+        <p>Segmentation, volumetry, quality control and longitudinal analysis for MRI/CT — built for research and clinical-trial standards.</p>
+        <ul class="stack"><li>MRI</li><li>Segmentation</li><li>QC</li><li>Deep learning</li></ul>
+      </article>
+
+      <article class="service">
+        <svg class="service-icon" viewBox="0 0 24 24" width="28" height="28" aria-hidden="true" focusable="false"><path d="M2 12c2-5 4-5 6 0s4 5 6 0 4-5 6 0" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M3 20h18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        <h3>Scientific ML &amp; simulation</h3>
+        <p>Physics-based simulation, surrogate models and optimisation that turn slow experiments into fast, data-driven decisions.</p>
+        <ul class="stack"><li>Simulation</li><li>Surrogate models</li><li>Optimisation</li><li>MLOps</li></ul>
+      </article>
+
     </div>
+    <p class="engagements">Engagements: project-based, retainers, or embedded in your team — remote or on-site in Heidelberg, Frankfurt, Munich, Berlin.</p>
+
+    <h3 class="subhead">How I work</h3>
+    <ol class="steps">
+      <li><span class="step-num" aria-hidden="true">1</span><div><strong>Intro call</strong><p>20 minutes to understand the problem and whether I'm the right fit.</p></div></li>
+      <li><span class="step-num" aria-hidden="true">2</span><div><strong>Scoped proposal</strong><p>Clear deliverables, timeline and price.</p></div></li>
+      <li><span class="step-num" aria-hidden="true">3</span><div><strong>Delivery</strong><p>Regular demos, documented code, and a clean handover to your team.</p></div></li>
+    </ol>
+  </section>
+
+  <section id="work" class="section" aria-labelledby="work-title">
+    <h2 class="section-title" id="work-title">Selected work</h2>
+    <p class="section-lede">Freelance engagements (clients anonymised) and previous roles.</p>
+    <div class="work-grid">
+
+      <article class="work-card work-featured">
+        <span class="work-kind">Client</span>
+        <h3>Large insurance company</h3>
+        <p>LLM-based document analysis tools, both RAG and non-RAG, deployed to production in the cloud.</p>
+        <p class="work-outcome">In use and evaluation by users in <strong>20+ countries</strong>.</p>
+      </article>
+
+      <article class="work-card">
+        <span class="work-kind">Client</span>
+        <h3>Medical device company</h3>
+        <p>Ultrasound simulation (k-Wave, non-linear wave propagation) to support better calibration models.</p>
+      </article>
+
+      <article class="work-card">
+        <span class="work-kind">Client</span>
+        <h3>Large machinery manufacturer</h3>
+        <p>ML model to optimise and characterise the effects of production parameters.</p>
+      </article>
+
+      <article class="work-card">
+        <span class="work-kind work-kind-role">Role · ML Engineer, 2021–2023</span>
+        <h3>Genomics startup (Nostos Genomics)</h3>
+        <p>Python ML platform automating hyperparameter optimisation, model testing and logging.</p>
+        <p class="work-outcome">Deployed deep learning and Bayesian network models.</p>
+      </article>
+
+      <article class="work-card">
+        <span class="work-kind work-kind-role">Role · Senior ML Engineer, 2019–2021</span>
+        <h3>Medical imaging company (mediaire)</h3>
+        <p>Deep learning models for whole-brain volumetry and lesion segmentation in Multiple Sclerosis; VAE-based MRI quality assessment.</p>
+      </article>
+
+    </div>
+
+    <!-- ─────────── TESTIMONIALS — uncomment once real quotes exist (never invent them) ───────────
+    <div class="testimonials">
+      <figure class="testimonial">
+        <blockquote>“QUOTE TEXT”</blockquote>
+        <figcaption><strong>NAME</strong>, ROLE · COMPANY</figcaption>
+      </figure>
+    </div>
+    ──────────────────────────────────────────────────────────────────────────────────────────── -->
+  </section>
+
+  <section id="projects" class="section" aria-labelledby="projects-title">
+    <h2 class="section-title" id="projects-title">Projects</h2>
+
+    <!--
+    ════════════════════════ PROJECT CARD TEMPLATE ════════════════════════
+    Copy this block into .cards below. Thumbnail: /assets/projects/<slug>.webp
+    (16:9, e.g. 1280×720). If the image is missing, a gradient fallback with
+    the title is shown automatically. Keep: problem ≤ ~15 words, one headline
+    metric, 1–2 lines of detail, max 4–5 tags. Drop the Live demo button if
+    there is none.
+
+      <article class="card">
+        <div class="card-thumb" data-title="PROJECT TITLE">
+          <img src="./assets/projects/SLUG.webp" alt="DESCRIBE THE SCREENSHOT" width="1280" height="720" loading="lazy" decoding="async">
+        </div>
+        <div class="card-body">
+          <div class="card-head">
+            <h3>PROJECT TITLE</h3>
+            <span class="tag">AI / ML</span>
+          </div>
+          <p class="card-problem">ONE-LINE PROBLEM STATEMENT</p>
+          <p class="card-metric">HEADLINE METRIC <span>what the metric means</span></p>
+          <p class="card-desc">One or two lines of supporting detail.</p>
+          <ul class="stack"><li>Tag</li><li>Tag</li></ul>
+          <div class="card-links">
+            <a class="btn btn-sm btn-primary" href="DEMO_URL" target="_blank" rel="noopener">Live demo ↗</a>
+            <a class="btn btn-sm" href="SOURCE_URL" target="_blank" rel="noopener">Source ↗</a>
+          </div>
+        </div>
+      </article>
+    ══════════════════════════════════════════════════════════════════════
+    -->
+
+    <div class="cards">
+
+      <article class="card">
+        <div class="card-thumb" data-title="recalibench">
+          <img src="./assets/projects/recalibench.webp" alt="Reliability diagram comparing model confidence before and after calibration" width="1280" height="720" loading="lazy" decoding="async">
+        </div>
+        <div class="card-body">
+          <div class="card-head">
+            <h3>recalibench</h3>
+            <span class="tag">AI / ML</span>
+          </div>
+          <p class="card-problem">Is your AI's confidence honest?</p>
+          <p class="card-metric">81% → 94% <span>cases auto-handled at 99% accuracy</span></p>
+          <p class="card-desc">Post-hoc calibration of an LLM API on a small labelled sample, no retraining. Calibration error fell 3–20× on every task.</p>
+          <ul class="stack">
+            <li>Python</li>
+            <li>scikit-learn</li>
+            <li>LLM APIs</li>
+            <li>Streamlit</li>
+          </ul>
+          <div class="card-links">
+            <a class="btn btn-sm btn-primary" href="https://github.com/dagap/recalibench" target="_blank" rel="noopener">Source ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-thumb" data-title="Analytics dashboard">
+          <img src="./assets/projects/ledger.webp" alt="Dashboard with a daily P&amp;L calendar and equity curve" width="1280" height="720" loading="lazy" decoding="async">
+        </div>
+        <div class="card-body">
+          <div class="card-head">
+            <h3>Zero-dependency analytics dashboard</h3>
+            <span class="tag tag-live">Side project · Live demo</span>
+          </div>
+          <p class="card-problem">Turning raw CSV exports into an interactive dashboard with zero dependencies.</p>
+          <p class="card-metric">1 file, 0 deps <span>one self-contained HTML file</span></p>
+          <p class="card-desc">Daily P&amp;L calendar, equity curve, win/loss analysis and rolling metrics — pure Python + vanilla JS + hand-rolled SVG charts.</p>
+          <ul class="stack">
+            <li>Python (stdlib)</li>
+            <li>Vanilla JS</li>
+            <li>SVG</li>
+          </ul>
+          <div class="card-links">
+            <a class="btn btn-sm btn-primary" href="https://dagap.github.io/trade-republic-pnl-ledger/" target="_blank" rel="noopener">Live demo ↗</a>
+            <a class="btn btn-sm" href="https://github.com/dagap/trade-republic-pnl-ledger" target="_blank" rel="noopener">Source ↗</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="about" class="section" aria-labelledby="about-title">
+    <h2 class="section-title" id="about-title">About &amp; experience</h2>
+    <div class="about">
+      <p>
+        I'm a machine learning engineer with a PhD in Medical Physics and
+        Bioengineering from UCL and 15+ years of software development
+        experience. I specialise in taking ML from research to production — in
+        medical imaging, LLM-based systems and scientific computing. I work in
+        English<!-- ; German: {{GERMAN_LEVEL}} -->.
+      </p>
+    </div>
+
+    <ol class="timeline" aria-label="Experience and education">
+      <li><span class="tl-date">2023 – today</span><span class="tl-what">Independent consultant &amp; ML engineer</span></li>
+      <li><span class="tl-date">2021 – 2023</span><span class="tl-what">Machine Learning Engineer, Nostos Genomics (Berlin)</span></li>
+      <li><span class="tl-date">2019 – 2021</span><span class="tl-what">Senior Machine Learning Engineer, mediaire (Berlin)</span></li>
+      <!-- TODO: fill 2013–2019 from new CV — do not invent entries -->
+      <li><span class="tl-date">2013</span><span class="tl-what">PhD, Medical Physics &amp; Bioengineering, University College London</span></li>
+      <li><span class="tl-date">2008</span><span class="tl-what">MSc, Medical Physics &amp; Bioengineering, University College London</span></li>
+    </ol>
+
+    <ul class="skills" aria-label="Skills">
+      <li>Machine learning</li>
+      <li>Deep learning</li>
+      <li>LLMs &amp; RAG</li>
+      <li>Agentic AI</li>
+      <li>Medical image analysis</li>
+      <li>Computer vision</li>
+      <li>Scientific computing</li>
+      <li>MLOps</li>
+      <li>Python</li>
+      <li>Cloud deployment</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="section contact" aria-labelledby="contact-title">
+    <h2 class="section-title" id="contact-title">Let's work together</h2>
+    <p class="contact-lede">
+      Have a project in LLMs, medical imaging or scientific ML? Tell me about it — I usually reply within a day.
+    </p>
+    <!-- Links whose href still contains a {{PLACEHOLDER}} are hidden automatically by CSS until filled in. -->
+    <div class="contact-links">
+      <a class="btn btn-primary btn-lg" href="mailto:{{EMAIL}}">
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="m3 7 9 6 9-6" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+        Email
+      </a>
+      <a class="btn btn-lg" href="{{BOOKING_URL}}" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="16" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M3 10h18M8 3v4M16 3v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        Book a 20-min intro call ↗
+      </a>
+      <a class="btn btn-lg" href="{{LINKEDIN_URL}}" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        LinkedIn ↗
+      </a>
+      <a class="btn btn-lg" href="https://www.malt.com/profile/pankajdaga1" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><rect x="3" y="7" width="18" height="13" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M9 7V5h6v2M3 12h18" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+        Malt ↗
+      </a>
+      <a class="btn btn-lg" href="{{CV_PDF}}" download>
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M12 4v11m0 0-4-4m4 4 4-4M5 20h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Download CV (PDF)
+      </a>
+      <a class="btn btn-lg" href="https://github.com/dagap" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="m8 8-4 4 4 4M16 8l4 4-4 4M14 5l-4 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        GitHub ↗
+      </a>
+    </div>
+    <p class="contact-note">Based in Heidelberg · Remote across Europe · On-site: Heidelberg, Frankfurt, Munich, Berlin</p>
   </section>
 
 </main>
 
 <footer class="footer">
-  <p>© <span id="year">2026</span> Dr. Pankaj Daga · Built with plain HTML/CSS, hosted on GitHub Pages</p>
+  <p>© <span id="year">2026</span> Dr. Pankaj Daga · Heidelberg, Germany</p>
+  <ul class="footer-links">
+    <li><a href="mailto:{{EMAIL}}">Email</a></li>
+    <li><a href="{{LINKEDIN_URL}}" target="_blank" rel="noopener">LinkedIn</a></li>
+    <li><a href="https://github.com/dagap" target="_blank" rel="noopener">GitHub</a></li>
+    <li><a href="./impressum.html">Impressum</a></li>
+    <li><a href="./datenschutz.html">Datenschutz</a></li>
+  </ul>
 </footer>
 
 <script src="./main.js"></script>
 
-<!-- ─────────────────────────── Analytics (optional) ───────────────────────────
-  Privacy-friendly, free, no cookie banner needed. Pick ONE, sign up, then
-  uncomment its snippet:
-
-  GoatCounter (recommended, simplest):
-    1. Sign up free at https://www.goatcounter.com/  (choose a code, e.g. "dagap")
-    2. Uncomment:
-       <script data-goatcounter="https://YOURCODE.goatcounter.com/count"
-               async src="//gc.zgo.at/count.js"></script>
-
-  Cloudflare Web Analytics (free; no account resale, needs a Cloudflare account):
-    1. Add the site at https://dash.cloudflare.com/ → Web Analytics
-    2. Paste the <script defer src="https://static.cloudflareinsights.com/..."> tag it gives you.
-──────────────────────────────────────────────────────────────────────────── -->
+<!-- ─────────────────────────── Analytics ───────────────────────────
+  Intentionally NONE. Adding any analytics, embeds (YouTube, Calendly widget,
+  maps), web fonts or other third-party resources transfers visitor data to a
+  third party: update datenschutz.html first, and check whether consent
+  (TDDDG §25) is required.
+──────────────────────────────────────────────────────────────────── -->
 </body>
 </html>

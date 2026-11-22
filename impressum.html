@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="de" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Impressum — Dr. Pankaj Daga</title>
+<meta name="description" content="Impressum (Anbieterkennzeichnung) von Dr. Pankaj Daga.">
+<meta name="robots" content="noindex, follow">
+<link rel="icon" href="./favicon.svg" type="image/svg+xml">
+<script>
+  (function(){try{var t=localStorage.getItem("theme");if(!t&&matchMedia("(prefers-color-scheme: light)").matches)t="light";if(t)document.documentElement.setAttribute("data-theme",t);}catch(e){}document.documentElement.classList.add("js");})();
+</script>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body id="top">
+<a class="skip" href="#main">Zum Inhalt springen</a>
+
+<header class="topbar" id="topbar">
+  <a class="brand" href="./">pankaj<span class="accent">.daga</span></a>
+  <div class="topbar-right">
+    <a class="legal-back" href="./">← Zur Startseite <span lang="en">/ Back to home</span></a>
+    <button id="theme-toggle" class="icon-btn theme-toggle" type="button" aria-label="Dunkelmodus umschalten" title="Dunkelmodus umschalten">
+      <svg class="icon-sun" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <svg class="icon-moon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="main" class="legal">
+  <h1>Impressum</h1>
+  <!-- Fill every highlighted {{PLACEHOLDER}} before publishing. A street address is mandatory (no P.O. box). -->
+  <p class="legal-en" lang="en">Legal notice as required by German law (§ 5 DDG).</p>
+
+  <h2>Angaben gemäß § 5 DDG</h2>
+  <p>
+    Dr. Pankaj Daga<br>
+    <mark class="ph">{{STRASSE_HAUSNUMMER}}</mark><br>
+    <mark class="ph">{{PLZ}}</mark> Heidelberg<br>
+    Deutschland
+  </p>
+
+  <h2>Kontakt</h2>
+  <p>
+    E-Mail: <mark class="ph">{{EMAIL}}</mark><br>
+    Telefon: <mark class="ph">{{TELEFON}}</mark>
+  </p>
+
+  <!-- Only if you have one. Delete this block otherwise.
+       Since 2025 the Bundeszentralamt für Steuern issues a Wirtschafts-Identifikationsnummer (W-IdNr.);
+       once you have it, § 5 DDG requires listing it too. -->
+  <h2>Umsatzsteuer-ID</h2>
+  <p>
+    Umsatzsteuer-Identifikationsnummer gemäß § 27a Umsatzsteuergesetz:<br>
+    <mark class="ph">{{UST_ID}}</mark>
+  </p>
+
+  <h2>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h2>
+  <p>
+    Dr. Pankaj Daga<br>
+    Anschrift wie oben
+  </p>
+
+  <h2>Verbraucherstreitbeilegung</h2>
+  <p>
+    Ich bin nicht bereit und nicht verpflichtet, an Streitbeilegungsverfahren vor einer
+    Verbraucherschlichtungsstelle teilzunehmen.
+  </p>
+
+</main>
+
+<footer class="footer">
+  <p>© <span id="year">2026</span> Dr. Pankaj Daga · Heidelberg, Germany</p>
+  <ul class="footer-links">
+    <li><a href="./">Startseite</a></li>
+    <li><a href="./impressum.html">Impressum</a></li>
+    <li><a href="./datenschutz.html">Datenschutz</a></li>
+  </ul>
+</footer>
+
+<script src="./main.js"></script>
+</body>
+</html>
